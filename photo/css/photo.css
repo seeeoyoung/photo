@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+
+* {margin:0; padding:0; box-sizing:border-box;}
+   .material-symbols-outlined {font-variation-settings:'FILL' 0,'wght' 400,
+   'GRAD' 0,'opsz' 48}
+   
+   html {scroll-behavior:smooth;}
+   html,body {font:10pt/160% "맑은 고딕";}
+   #layout {display:block; width:1200px; max-width:100%; margin:auto;}
+   img{ max-width:100%;}
+   a {text-decoration:none; color:black;}
+   h4 {display:none;}
+   
+   #top {max-width:1200px; margin:auto; padding:10pt 0; display:flex;
+         align-items:center;}
+   #top p {flex:1; padding:3px; text-align:center;}
+   .title {background:#e3e2de; font-size:2.4rem; padding:20px 5px; flex:2;
+           text-align:center; font-family: 'Nanum Myeongjo',serif;
+		   letter-spacing:-0.1rem;}
+   
+   #menu {padding:20px; display:flex; padding-bottom:0;}
+   #menu a:hover {transform:translateY(-10px);
+                  font-size:1.5rem;
+				  background:gray;
+				  color:white;}
+   #menu a {transition:0.5s;}
+   #menu a {flex:1; text-align:center; font-size:1.3rem; 
+            padding:20px;}
+
+   
+   .mainimage {display:grid; grid-template-columns:1fr 0.87fr; width:100%;
+                border:0px solid red;}
+                 
+   #gradation {border:0px solid red; display:flex;} 
+   #gradation img {width:100%;}
+   
+   #portfolio {background:#8f8f8f; padding:20px;}
+   #portfolio h2 {font-size:2.5rem; font-family: 'Nanum Myeongjo',serif;      
+   text-align:center; color:white; padding-top:20px; padding-bottom:40px;}
+				  
+   #portfolio hr {border:10px dashed white;}
+   
+   #portfolio .portfolio {max-width:1150px; display:flex; border:0px solid blue;}
+   .portfolio img {width:25%; display:block; padding-bottom:40px;transition:0.5s;}
+   .portfolio img:hover {transform:scale(1.1) !important; z-index:1;}
+   
+   #portfolio img:not(:last-child) {padding-right:15pt;}
+   #portfolio img:nth-child(1) {transform:translateY(-17px);}
+   #portfolio img:nth-child(2) {transform:translateY(17px);}
+   #portfolio img:nth-child(3) {transform:translateY(-17px);}
+   #portfolio img:nth-child(4) {transform:translateY(17px);}
+                    
+   #trophy {background:#cab188; padding:30px 0 50px 0; text-align:center; }
+   #trophy span {font-size:3rem; color:yellow;}
+   #trophy h3 {font-size:2rem; padding-top:15px; padding-bottom:20px;}
+   .three {display:flex; font-size:1.8em; color:white;
+           flex:1; justify-content:center;} 
+   
+   .class img {}
+   
+   .map {display:flex; }
+   .map iframe {padding:40px 0 40px 40px;}
+   .map div {border:0px solid red; display:block; padding-top:140px; padding-left:30px;
+             font-size:1.8rem; line-height:120%;}
+   .map div> h2 {line-height:140%;}
+  
+			 
+			 
+			 
+/************************/
+ @media(max-width:600px){
+	  .title {font-size:1.3rem;}
+	  .map {flex-direction:column;}
+	  .map iframe {width:100%;}
+	  #portfolio .portfolio {margin:0;}
+	  .three h2 {font-size:0.8rem;}
+}
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
